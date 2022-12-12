@@ -27,7 +27,7 @@ const Header = () => {
         <Tabs textColor="inherit"
           value={value} onChange={(e, val) =>
             setValue(val)}>
-         
+          <Tab LinkComponent={Link} to="/blogs" label="All Blogs" />
           <Tab LinkComponent={Link} to="/myBlogs" label="My Blogs" />
         </Tabs>
       </Box>}
