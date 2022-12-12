@@ -40,7 +40,7 @@ const Header = () => {
               to="/auth"
               variant="contained"
               sx={{ margin: 1, borderRadius: 10 }}
-              color="warning"
+              color="warnin"
             >
               Login
             </Button>
