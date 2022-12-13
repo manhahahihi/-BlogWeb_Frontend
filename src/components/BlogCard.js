@@ -17,7 +17,7 @@ const BlogCard = ({title,description,imageURL,userName}) => {
                 <CardHeader
                     avatar={
                         <Avatar sx={{ bgcolor: "red" }} aria-label="recipe">
-                            
+                             {userName ? userName.charAt(0) : ""}
                         </Avatar>
                     }
                     title={title}
