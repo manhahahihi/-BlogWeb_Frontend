@@ -20,7 +20,6 @@ const BlogCard = ({title,description,imageURL,userName}) => {
                              {userName ? userName.charAt(0) : ""}
                         </Avatar>
                     }
-                    title={title}
                 />
                 <CardMedia
                     component="img"
