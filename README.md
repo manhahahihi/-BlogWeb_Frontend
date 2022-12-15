@@ -1,4 +1,4 @@
-# BACKEND-BLOG 💻
+# FRONTEND-BLOG 💻
 
 
 ## 🖥 Tech Stack
