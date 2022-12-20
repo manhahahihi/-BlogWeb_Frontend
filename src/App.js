@@ -1,30 +1,41 @@
-import React from "react";
-import Auth from "./components/Auth";
-import Header from "./components/Header";
-import {Route,Routes} from "react-router-dom"
-import Blogs from "./components/Blogs";
-import BlogDetail from "./components/BlogDetail";
-import AddBlogs from "./components/AddBlogs";
-import UserBlog from "./components/UserBlog";
-import { useSelector } from "react-redux";
+import Home from "./pages/home/Home";
+import TopBar from "./components/topbar/TopBar";
+import Single from "./pages/single/Single";
+import Write from "./pages/write/Write";
+import Settings from "./pages/settings/Settings";
+import Login from "./pages/login/Login";
+import Register from "./pages/register/Register";
+import About from "./pages/about/about";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { useContext } from "react";
+import { Context } from "./context/Context";
+import Footer from "./components/footer/Footer";
+
+
+
 function App() {
-  const isLoggedIn = useSelector(state => state.isLoggedIn);
-  console.log(isLoggedIn)
+  const { user } = useContext(Context);
   return (
-    <React.Fragment>
-    <header>
-      <Header/>
-    </header>
-    <main>
-      <Routes>
-        <Route path="/auth" element={<Auth />}/>
-        <Route path="/blogs" element={<Blogs />}/>
-        <Route path="/blogs/add" element={<AddBlogs />}/>
-        <Route path="/myBlogs" element={<UserBlog />} />
-        <Route path="/myBlogs/:id" element={<BlogDetail />}/>
-      </Routes>
-    </main>
-  </React.Fragment>
-)}
+    <Router>
+      <TopBar />
+      
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/register">{user ? <Home /> : <Register />}</Route>
+        <Route path="/login">{user ? <Home /> : <Login />}</Route>
+        <Route path="/write">{user ? <Write /> : <Register />}</Route>
+        <Route path="/settings">{user ? <Settings /> : <Register />}</Route>
+        <Route path="/about">{user ? <About /> : <Register />}</Route>
+        <Route path="/post/:postId">
+          <Single />
+          
+        </Route>
+      </Switch>
+      <Footer />
+    </Router>
+  );
+}
 
 export default App;
