@@ -172,4 +172,4 @@ const Auth = () => {
   );
 };
 
-export default Aut;
+export default Auth;
