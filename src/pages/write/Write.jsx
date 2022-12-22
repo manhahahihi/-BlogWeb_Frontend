@@ -3,7 +3,8 @@ import "./write.css";
 import axios from "axios";
 import { Context } from "../../context/Context";
 import { ToastContainer, toast } from 'react-toastify';
-import Posts from "../../components/posts/Posts";
+import Header from "../../components/header/Header";
+
 export default function Write() {
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
@@ -52,6 +53,8 @@ export default function Write() {
     } catch (err) { }
   };
   return (
+    <>
+    <Header/>
     <div className="write">
       {file && (
         <img className="writeImg" src={URL.createObjectURL(file)} alt="" />
@@ -60,7 +63,7 @@ export default function Write() {
         <div className="writeFormGroup">
           <input
             type="text"
-            placeholder="Title"
+            placeholder="TITLE"
             className="writeInput"
             autoFocus={true}
             onChange={e => setTitle(e.target.value)}
@@ -99,5 +102,6 @@ export default function Write() {
         />
       </form>
     </div>
+    </>
   );
 }

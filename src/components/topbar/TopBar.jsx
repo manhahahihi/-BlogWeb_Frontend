@@ -14,22 +14,22 @@ export default function TopBar() {
   return (
     <div className="top">
       <div className="topLeft">
-      <a href='' className='me-4 text-reset'>
+      <a href='https://www.facebook.com/phonelitefromUIT' className='me-4 text-reset' target='blank'>
             <MDBIcon color='secondary' fab icon='facebook-f' />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='https://twitter.com/Chanfuc812' className='me-4 text-reset' target='blank'>
             <MDBIcon color='secondary' fab icon='twitter' />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='https://drive.google.com/drive/folders/17ttnA_1IYg0NQNxi7ddG8F27REpL5gSp' className='me-4 text-reset' target='blank'>
             <MDBIcon color='secondary' fab icon='google' />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='https://www.instagram.com/minhtawng' className='me-4 text-reset' target='blank'>
             <MDBIcon color='secondary' fab icon='instagram' />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='https://www.linkedin.com/school/university-of-information-technology' className='me-4 text-reset' target='blank'>
             <MDBIcon color='secondary' fab icon='linkedin' />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='https://github.com/Chanfuc812' className='me-4 text-reset' target='blank'>
             <MDBIcon color='secondary' fab icon='github' />
           </a>
         
@@ -47,7 +47,7 @@ export default function TopBar() {
             </Link>
           </li>
           <li className="topListItem">
-            <Link className="link" to="/">
+            <Link className="link" to="../contact">
               CONTACT
             </Link>
           </li>
@@ -64,7 +64,7 @@ export default function TopBar() {
       <div className="topRight">
         {user ? (
           <Link to="/settings">
-            <img className="topImg" src={PF+user.profilePic} alt="" />
+            <img className="topImg" src={PF+user.profilePic} alt=""/>
           </Link>
         ) : (
           <ul className="topList">

@@ -22,12 +22,20 @@ export default function Sidebar() {
           alt=""
         />
         <p>
-        You only live once in your life, why not live it to the fullest and share it all for everyone to know. 
-        If it's hard to express those moments or emotions, bring it to MTPlog 🤟
+        You only live once in your life, why not live it to the fullest and share it all for everyone to know? 
+        If it is too hard to express those moments or emotions, bring it to MTPlog. You are Welcome 🤟
         </p>
       </div>
       <div className="sidebarItem">
-        <span className="sidebarTitle">CATEGORIES</span>
+        <div className="sidebarTitle">CATEGORIES</div>
+        <div className="sidebarTitle2">Love Sport</div>
+        <div className="sidebarTitle2">Travel Games</div>
+        <div className="sidebarTitle2">Social Beauty</div>
+        <div className="sidebarTitle2">Design Cuisine</div>
+        <div className="sidebarTitle2">Media Career</div>
+        <div className="sidebarTitle2">Clothes Finance </div>
+        <div className="sidebarTitle2">Crypto Videos </div>
+        <div className="sidebarTitle2">Others... </div>
         <ul className="sidebarList">
           {cats.map((c) => (
             <Link to={`/?cat=${c.name}`} className="link">
@@ -37,14 +45,11 @@ export default function Sidebar() {
         </ul>
       </div>
       <div className="sidebarItem">
-        <span className="sidebarTitle">FOLLOW US</span>
-        <div className="sidebarSocial">
-        <i className="topIcon fab fa-facebook-square"></i>
-        <i className="topIcon fab fa-twitter-square"></i>
-        <i className="topIcon fab fa-instagram-square"></i>
-        <i className="topIcon fab fa-youtube-square"></i>
-        <i className="topIcon fab fa-github-square"></i>
-        </div>
+        <span className="sidebarTitle">Featured Members</span>
+        <div className="sidebarRating">🥇 Chanfuc</div>
+        <div className="sidebarRating">🥈 Manhihi</div>
+        <div className="sidebarRating">🥉 Mintank</div>
+        <div className="sidebarRating">🏅 MesSoi</div>
       </div>
     </div>
   );
