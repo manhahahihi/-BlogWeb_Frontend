@@ -57,7 +57,7 @@ export default function Register() {
           Login
         </Link>
       </button>
-      {error && <span style={{color:"red", marginTop:"10px"}}>Something went wrong. Your password is too short!</span>}
+      {error && <span style={{color:"red", marginTop:"10px"}}>Something went wrong. Your password was too short!</span>}
     </div>
   );
 }
