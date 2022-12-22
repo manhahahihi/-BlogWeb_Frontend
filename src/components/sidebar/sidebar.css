@@ -42,6 +42,10 @@
   margin-top: 15px;
 }
 
+.sidebar{
+  height: 50%;
+}
+
 .sidebarItem > p {
   padding: 30px;
 }

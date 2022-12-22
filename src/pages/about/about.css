@@ -5,6 +5,7 @@
     margin-top: 70px;
     text-align: center;
     line-height: 50px;
+    color: darkgoldenrod;   
 
 }
 
@@ -49,14 +50,29 @@
 
 .b, p {
     font-weight: bolder;
+    
 }
 
 .col .h5{
     line-height: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
-h1{
-    font-weight: bolder;
+.col .h1{
+    font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style:initial;
+    color: maroon;
+    justify-content: space-between;
+    font-size:40px;
+    text-align: center;
+}
+
+.page .h51{
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: right;
+    font-weight: bold;
+    color: firebrick;
 }

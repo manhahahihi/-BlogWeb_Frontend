@@ -2,10 +2,15 @@ import "./contact.css";
 import React from 'react';
 import logo2 from './logo2.JPG'; 
 import logo3 from './logo3.JPG'; 
+import logo4 from './logo4.JPG'; 
+import logo5 from './logo5.JPG'; 
 import Header from "../../components/header/Header";
 
 console.log(logo2); 
 console.log(logo3); 
+console.log(logo4);
+console.log(logo5);
+
 export default function About() {
 
     return(
@@ -38,10 +43,21 @@ export default function About() {
 </div>
 </div>
 </section>
+      <div className="h66">
+      Official Fanpages
+      </div>
         <div className="img2">
           <img src={logo2}/> 
           <p>
-          Our Official Facebook Fanpage
+          *Our Official Facebook Fanpage
+        </p>
+        <img src={logo4}/> 
+          <p>
+          *Our Official Linkedin Fanpage
+        </p>
+        <img src={logo5}/> 
+          <p>
+          *GitHub
         </p>
       </div>
       

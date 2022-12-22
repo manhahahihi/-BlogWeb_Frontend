@@ -15,7 +15,7 @@
     width:50;
     height:50 ;
     position:relative;
-    margin-top: 50px;
+    margin-top: 10px;
     text-align: center;
     line-height: 30px;
     font-weight: bold;
@@ -41,4 +41,17 @@
 .h55{
     line-height: 30px;
     font-size: 16.5px;
+}
+
+.h66{
+    font-size:40px;
+    margin-top: 0px;
+    justify-content: space-between;
+    grid-column-gap: 2rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style:initial;
+    color:darksalmon;
+    background-color:lightblue;
 }
