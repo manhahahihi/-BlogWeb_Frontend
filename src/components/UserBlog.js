@@ -8,4 +8,4 @@ const UserBlog = () => {
   )
 }
 
-export default UserBlo
+export default UserBlog
